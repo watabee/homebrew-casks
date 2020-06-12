@@ -12,7 +12,7 @@ cask 'android-studio-preview-beta' do
                          'android-studio-preview-canary',
                        ]
 
-  app 'Android Studio #{version.major_minor} Preview.app'
+  app 'Android Studio.app', target: 'Android Studio #{version.major_minor} Preview.app'
 
   zap trash: [
                '~/Library/Android/sdk',
