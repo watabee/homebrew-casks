@@ -7,12 +7,7 @@ cask 'android-studio-preview-beta' do
   name 'Android Studio Preview (Beta)'
   homepage 'https://developer.android.com/studio/preview/'
 
-  conflicts_with cask: [
-                         'android-studio',
-                         'android-studio-preview-canary',
-                       ]
-
-  app 'Android Studio.app', target: 'Android Studio #{version.major_minor} Preview.app'
+  app 'Android Studio #{version.major_minor} Preview.app'
 
   zap trash: [
                '~/Library/Android/sdk',
