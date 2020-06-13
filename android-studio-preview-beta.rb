@@ -7,7 +7,7 @@ cask 'android-studio-preview-beta' do
   name 'Android Studio Preview (Beta)'
   homepage 'https://developer.android.com/studio/preview/'
 
-  app 'Android Studio #{version.major_minor} Preview.app'
+  app "Android Studio #{version.major_minor} Preview.app"
 
   zap trash: [
                '~/Library/Android/sdk',
