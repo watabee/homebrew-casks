@@ -10,18 +10,18 @@ cask 'android-studio-preview-canary' do
   app "Android Studio #{version.major_minor} Preview.app"
 
   zap trash: [
-               '~/Library/Android/sdk',
-               "~/Library/Application Support/AndroidStudio#{version.major_minor}",
-               "~/Library/Caches/AndroidStudio#{version.major_minor}",
-               "~/Library/Logs/AndroidStudio#{version.major_minor}",
-               "~/Library/Preferences/AndroidStudio#{version.major_minor}",
-               '~/Library/Preferences/com.android.Emulator.plist',
-               '~/Library/Saved Application State/com.google.android.studio.savedState',
-               '~/.android',
+               #'~/Library/Android/sdk',
+               "~/Library/Application Support/Google/AndroidStudio#{version.major_minor}",
+               "~/Library/Caches/Google/AndroidStudio#{version.major_minor}",
+               "~/Library/Logs/Google/AndroidStudio#{version.major_minor}",
+               #"~/Library/Preferences/AndroidStudio#{version.major_minor}",
+               #'~/Library/Preferences/com.android.Emulator.plist',
+               '~/Library/Saved Application State/com.google.android.studio-EAP.savedState',
+               #'~/.android',
              ],
       rmdir: [
-               '~/AndroidStudioProjects',
-               '~/Library/Android',
+               #'~/AndroidStudioProjects',
+               #'~/Library/Android',
              ]
 end
 
